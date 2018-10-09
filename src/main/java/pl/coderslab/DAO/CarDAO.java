@@ -27,12 +27,17 @@ public class CarDAO extends Car {
                 if (resultSet.next()) {
                     this.setId(resultSet.getInt(1));
                 }
-//            } else {
-//                String sql = "update cars set updated=now(), description=? where id=?";
-//                PreparedStatement preparedStatement = connection.prepareStatement(sql);
-//                preparedStatement.setString(1, this.description);
-//                preparedStatement.setInt(2, this.id);
-//                preparedStatement.executeUpdate();
+            } else {
+                String sql = "update cars set model=?, brand=?, year=?, plate=?, next_check=?, customer_id=? WHERE id=?";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setString(1, this.getModel());
+                preparedStatement.setString(2, this.getBrand());
+                preparedStatement.setInt(3, this.getYear());
+                preparedStatement.setString(4, this.getPlate());
+                preparedStatement.setDate(5, (Date) this.getNext_check());
+                preparedStatement.setInt(6, this.getCustomer_id());
+                preparedStatement.setInt(7, this.getId());
+                preparedStatement.executeUpdate();
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -87,6 +92,21 @@ public class CarDAO extends Car {
             loadedCar.setNext_check(resultSet.getDate("next_check"));
             loadedCar.setCustomer_id(resultSet.getInt("customer_id"));
             cars.add(loadedCar);
+        }
+    }
+
+    public void delete() throws SQLException {
+        try {
+            Connection connection = DbUtil.getConn();
+            if (this.getId() != 0) {
+                String sql = "delete from cars where id=?";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setInt(1, this.getId());
+                preparedStatement.executeUpdate();
+                this.setId(0);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

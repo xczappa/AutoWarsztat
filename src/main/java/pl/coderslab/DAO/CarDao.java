@@ -35,22 +35,34 @@ public class CarDao extends HttpServlet {
 //        }
 
 //        try {
-//            Car car2 = CarDAO.loadCarById(4);
-//            response.getWriter().append(car2.toString());
-//        } catch (SQLException e) {
 
         try {
-            ArrayList<Car> car3 = CarDAO.loadAllCars();
-            response.getWriter().append(car3.toString());
+            CarDAO car2 = (CarDAO) CarDAO.loadCarById(1);
+            response.getWriter().append(car2.toString()+"<br>");
+            car2.setBrand("PUNTO");
+            response.getWriter().append(car2.toString());
+            car2.CarSaveToDB();
         } catch (SQLException e) {
-            e.printStackTrace();
+
+
         }
 
+//            car2.delete();
+//
+//        } catch (SQLException e) {
+
+//        try {
+//            ArrayList<Car> car3 = CarDAO.loadAllCars();
+//            response.getWriter().append(car3.toString());
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+        }
     }
 
 
 
 
 
-    }
+
 

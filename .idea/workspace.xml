@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c2a5af6-bbb3-40ce-813b-ff3a2650a1ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AutoWarsztat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/poligon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +31,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="warsztat@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="warsztat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="warsztat@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="warsztat: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -97,15 +102,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="cars" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="java" value="14" />
+          <entry key="sql" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Database Element" value="2" />
           <entry key="JAVA" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -119,70 +128,89 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="963" />
+          <entry key="JAVA" value="1153" />
+          <entry key="PLAIN_TEXT" value="44" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="963" />
+          <entry key="java" value="1153" />
+          <entry key="txt" value="44" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/models/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-              <folding>
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1190#1191#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.59369314">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/models/Car.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="918">
+                  <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#608#609#0" expanded="true" />
+                    <element signature="e#636#637#0" expanded="true" />
+                    <element signature="e#738#739#0" expanded="true" />
+                    <element signature="e#763#764#0" expanded="true" />
+                    <element signature="e#1156#1157#0" expanded="true" />
+                    <element signature="e#1190#1191#0" expanded="true" />
+                    <element signature="e#1389#1390#0" expanded="true" />
+                    <element signature="e#1423#1424#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="193">
+                  <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="das://0bc2f055-7421-4af3-b13c-db558a72f4e6/schema/warsztat/table/cars">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -215,8 +243,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/poligon.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/models/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java" />
       </list>
     </option>
   </component>
@@ -347,10 +375,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver&#10;mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539077578941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539087866103" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -554,18 +584,26 @@
       <workItem from="1538994288955" duration="1862000" />
       <workItem from="1538997115923" duration="3209000" />
       <workItem from="1539002060198" duration="14200000" />
-      <workItem from="1539069240719" duration="7510000" />
+      <workItem from="1539069240719" duration="16184000" />
     </task>
+    <task id="LOCAL-00001" summary="dziala getbyId, savetoDB, getAll">
+      <created>1539077751763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539077751763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26781000" />
+    <option name="totallyTimeSpent" value="35455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49818182" visible="true" weight="0.20820022" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49818182" visible="true" weight="0.12193823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -573,9 +611,10 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.5018182" side_tool="true" weight="0.10756124" />
+      <window_info anchor="bottom" id="Database Console" weight="0.2550911" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41050375" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31939977" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997722" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -583,9 +622,9 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.2368703" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.2368703" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -593,7 +632,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32937685" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3290735" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -603,6 +642,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dziala getbyId, savetoDB, getAll" />
+    <option name="LAST_COMMIT_MESSAGE" value="dziala getbyId, savetoDB, getAll" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
@@ -687,6 +730,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0bc2f055-7421-4af3-b13c-db558a72f4e6/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/models/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -706,18 +752,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="357">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="das://0bc2f055-7421-4af3-b13c-db558a72f4e6/schema/warsztat/table/cars">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/DAO/CarDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="193">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
         </state>
       </provider>
     </entry>
