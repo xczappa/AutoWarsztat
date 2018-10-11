@@ -44,7 +44,7 @@ public class CarDAO extends Car {
         }
     }
 
-    static public Car loadCarById(int id) throws SQLException {
+    public static Car loadCarById(int id) throws SQLException {
         Connection connection = DbUtil.getConn();
         String sql = "SELECT * FROM cars where id=?";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -99,6 +99,7 @@ public class CarDAO extends Car {
         try {
             Connection connection = DbUtil.getConn();
             if (this.getId() != 0) {
+                System.out.println("!!!!!!!!!!!CDSVSDVSDVS~!!!!!!!!!!!!!!!!");
                 String sql = "delete from cars where id=?";
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setInt(1, this.getId());
