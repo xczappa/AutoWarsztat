@@ -14,6 +14,7 @@
 <body>
 
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
+<jsp:include page="/WEB-INF/fragments/menu.jsp"/>
 
 <br>
 <a href="caraddnew">Wprowadz dane nowego samochodu</a>

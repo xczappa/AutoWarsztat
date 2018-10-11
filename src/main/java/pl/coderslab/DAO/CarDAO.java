@@ -64,6 +64,24 @@ public class CarDAO extends Car {
         return null;
     }
 
+    public static ArrayList<Car> loadAllCarsByCustomer(int cust_id) throws SQLException {
+
+        try {
+            Connection connection = DbUtil.getConn();
+            ArrayList<Car> carList = new ArrayList<>();
+            String sql = "SELECT * FROM cars WHERE customer_id=?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, cust_id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            getCarsData(carList, resultSet);
+            return carList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
     public static ArrayList<Car> loadAllCars() throws SQLException {
 
         try {

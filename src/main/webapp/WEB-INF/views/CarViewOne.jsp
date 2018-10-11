@@ -12,37 +12,29 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jsp"/>
+<jsp:include page="/WEB-INF/fragments/menu.jsp"/>
+
 
 <table class="table table-striped table-bordered table-hover" id="carsviewone">
     <thead>
     <tr>
-        <th>id</th>
-        <th>Model</th>
-        <th>Marka</th>
-        <th>Rok produkcji</th>
-        <th>Nr rejestracyjny</th>
-        <th>Nastepny przeglad</th>
-        <th>Kod wlasciciela</th>
-        <th>USUŃ</th>
-        <th>MODYFIKUJ</th>
+        <th>Dane</th>
+        <th>Samochód nr ${carone.id}</th>
     </tr>
     </thead>
+
     <tbody>
-    <%--<c:forEach var="car" items="${carone}">--%>
-        <tr>
-            <td>${carone.id}</td>
-            <td>${carone.model}</td>
-            <td>${carone.brand}</td>
-            <td>${carone.year}</td>
-            <td>${carone.plate}</td>
-            <td>${carone.next_check}</td>
-            <td>${carone.customer_id}</td>
-            <td><a href="/cardelete?id=${carone.id}">usuń</a></td>
-            <td><a href="http://wp.pl">link testowy</a></td>
-        </tr>
-    <%--</c:forEach>--%>
+    <tr><td>Id:<td>${carone.id}</td></tr>
+    <tr><td>Model:<td>${carone.model}</td></tr>
+    <tr><td>Marka:<td>${carone.brand}</td></tr>
+    <tr><td>Rok produkcji:<td>${carone.year}</td></tr>
+    <tr><td>Nr rej.:<td>${carone.plate}</td></tr>
+    <tr><td>Nast. przegląd:<td>${carone.next_check}</td></tr>
+    <tr><td>Nr klienta:<td>${carone.customer_id}</td></tr>
     </tbody>
-</table>
+</table> <br><br>
+<a href="/taskbycar?car_id=${carone.id}">ZLECENIA dla tego samochodu</a><br>
+<a href="/caredit?car_id=${carone.id}">EDYTUJ dane tego samochodu</a><br>
 
 <jsp:include page="/WEB-INF/fragments/footer.jsp"/>
 
